@@ -66,7 +66,6 @@ public class SingleDatabase {
         catch (Exception e)
         {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            //System.exit(0);
         }
     }
 
@@ -124,7 +123,6 @@ public class SingleDatabase {
         catch (Exception e)
         {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            //System.exit(0);
         }
     }
 
@@ -136,8 +134,6 @@ public class SingleDatabase {
             int cols = rsmd.getColumnCount();
             String[] colname = {"Movie","Rating", "Review"};
             System.out.println(cols);
-            //for (int i = 0; i < cols; i++)
-            //    colname[i] = rsmd.getColumnName(i + 1);
             model.setColumnIdentifiers(colname);
             String Moviename, review;
             int rating;
@@ -202,11 +198,8 @@ public class SingleDatabase {
             int cols = rsmd.getColumnCount();
             String[] colname = { "Poster", "Movie Name", "Description" };
             System.out.println(cols);
-            // for(int i =0; i<cols;i++)
-            // colname[i]=rsmd.getColumnName(i+1);
             model.setColumnIdentifiers(colname);
             String name, description;
-            // int seats;
             while (rs.next()) {
                 name = rs.getString(1);
                 description = rs.getString(2);
@@ -313,8 +306,6 @@ public class SingleDatabase {
             String sql = "INSERT INTO manager(name, password) Values('" + name + "'," + "'" + password
                     + "');";
             stm.executeUpdate(sql);
-
-            // c.commit();
             return 1;
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ":" + e.getMessage());
