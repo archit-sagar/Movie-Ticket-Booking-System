@@ -166,8 +166,7 @@ public class SingleDatabase {
         try {
             int flag = 0;
             String fetch = "Select * from movie where name='" + movie_name_text + "'";
-            String query = "insert";// insert into movie (name,theatre,seats,showdate,showtime) values
-                                    // ('"+movie_name_text.getText()+"','"+theatre_text.getText()+"','"+seats_text.getText()+"','"+movie_description.getText()+"','"+price_text.getText()+"')";
+            String query = "insert";
             ResultSet rs = stm.executeQuery(fetch);
 
             while (rs.next()) {
@@ -348,7 +347,6 @@ public class SingleDatabase {
                     + "');";
             stm.executeUpdate(sql);
 
-            // c.commit();
             return 1;
         } catch (Exception e) {
             System.err.println(e.getClass().getName() + ":" + e.getMessage());
