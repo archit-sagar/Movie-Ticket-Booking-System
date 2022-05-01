@@ -1,9 +1,6 @@
-//import java.util.HashMap;
 import javax.swing.*;
-//import javax.swing.JFrame;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-//import java.awt.Font;
 import java.awt.*;
 import javax.swing.table.DefaultTableModel;
 
@@ -146,8 +143,6 @@ class userView implements ActionListener, User {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 650);
         frame.setLayout(null);
-
-        // background.add(scrollPane);
 
         frame.getContentPane().add(jScrollPane2);
         frame.add(bookButton);
