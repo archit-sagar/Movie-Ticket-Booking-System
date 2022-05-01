@@ -194,7 +194,6 @@ class bookticket extends JFrame implements ActionListener {
         if (e.getSource() == bookTicket) {
             String typeSeat = (String) seatTypes.getSelectedItem();
             int qtySeat = Integer.parseInt(seatQty.getText());
-            // theatreN
 
             if (amount == 0) {
                 messageLabel.setText("Enter details and press confirm.");
