@@ -49,9 +49,6 @@ public class SuccessPage implements ActionListener {
         successPanel.setBackground(new Color(0, 0, 0, 80));
         successPanel.setBounds(0, 0, 1000, 100);
 
-        // ticketPanel.setBackground(new Color(0,0,0,80));
-        // ticketPanel.setBounds(0,110,1000,500);
-
         success.setBounds(400, 50, 400, 50);
         success.setForeground(Color.WHITE);
         success.setFont(new Font("Serif", Font.BOLD, 30));
@@ -101,11 +98,6 @@ public class SuccessPage implements ActionListener {
 
         successPanel.add(success);
 
-        // ticketPanel.add(ticket);
-        // ticketPanel.add(userNameLabel);
-        // ticketPanel.add(movieNameLabel);
-        // ticketPanel.add(seatTypeLabel);
-
         ImageIcon background_image = new ImageIcon("index.jfif");
         // JLabel background = new JLabel("",background_image,JLabel.CENTER);
         Image img = background_image.getImage();
@@ -113,26 +105,16 @@ public class SuccessPage implements ActionListener {
         background_image = new ImageIcon(temp_img);
         JLabel background = new JLabel("", background_image, JLabel.CENTER);
         background.setBounds(0, 0, 1000, 101);
-        // frame.add(background);
-
+        
         frame.setTitle("Success");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(1000, 650);
         frame.setLayout(null);
-
-        // ImageIcon icon = new ImageIcon("index.jfif");
-        // Image img = icon.getImage();
-        // Image temp_img=img.getScaledInstance(900,600,Image.SCALE_SMOOTH);
-        // icon = new ImageIcon(temp_img);
-        // JLabel background = new JLabel("",icon,JLabel.CENTER);
+        
         background.add(successPanel);
-        // background.add(ticketPanel);
-        // background.add(ticket);
-        // background.add(userNameLabel);
-        // background.add(movieNameLabel);
-        // background.add(seatTypeLabel);
+       
         frame.add(background);
-        // frame.add(ticketPanel);
+       
         frame.add(ticket);
         frame.add(movieLabel);
         frame.add(theatreLabel);
@@ -141,14 +123,7 @@ public class SuccessPage implements ActionListener {
         frame.add(typeLabel);
         frame.add(costLabel);
         frame.add(backButton);
-        // frame.add(userIDLabel);
-        // frame.add(userPasswordLabel);
-        // frame.add(messageLabel);
-        // frame.add(userIDField);
-        // frame.add(userPasswordField);
-        // frame.add(loginButton);
-        // frame.add(resetButton);
-        // frame.add(background);
+       
 
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
