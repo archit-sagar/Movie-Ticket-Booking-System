@@ -121,6 +121,3 @@ public class Addmovie implements ActionListener {
         }
     }
 }
-// java -cp "E:\pes1ug19cs095_sem6\final project 1\Login
-// system\postgresql-42.3.4.jar;E:\pes1ug19cs095_sem6\final project 1\Login
-// system\Manager" Addmovie
