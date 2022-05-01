@@ -11,4 +11,4 @@
 
  If you want to put images for new movie:
 1. Open the images folder and upload the pic of the movie in .jfif format
-2. Name the file the same as the movie name.
+2. Name the image the same as the movie name.
