@@ -99,7 +99,6 @@ public class SuccessPage implements ActionListener {
         successPanel.add(success);
 
         ImageIcon background_image = new ImageIcon("index.jfif");
-        // JLabel background = new JLabel("",background_image,JLabel.CENTER);
         Image img = background_image.getImage();
         Image temp_img = img.getScaledInstance(1000, 101, Image.SCALE_SMOOTH);
         background_image = new ImageIcon(temp_img);
